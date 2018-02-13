@@ -1,0 +1,7 @@
+C:\Users\maher.bensaid\source\repos\Algorithm\Algorithm\bin\Debug\Algorithm.exe.config
+C:\Users\maher.bensaid\source\repos\Algorithm\Algorithm\bin\Debug\Algorithm.exe
+C:\Users\maher.bensaid\source\repos\Algorithm\Algorithm\bin\Debug\Algorithm.pdb
+C:\Users\maher.bensaid\source\repos\Algorithm\Algorithm\obj\Debug\Algorithm.csprojResolveAssemblyReference.cache
+C:\Users\maher.bensaid\source\repos\Algorithm\Algorithm\obj\Debug\Algorithm.csproj.CoreCompileInputs.cache
+C:\Users\maher.bensaid\source\repos\Algorithm\Algorithm\obj\Debug\Algorithm.exe
+C:\Users\maher.bensaid\source\repos\Algorithm\Algorithm\obj\Debug\Algorithm.pdb
