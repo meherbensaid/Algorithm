@@ -113,18 +113,7 @@ namespace Algorithm
 
         public static void Main()
         {
-            LinkedList L = new LinkedList(1);
-            L.AddAtLast(3);
-            L.AddAtLast(5);
-            L.AddAtStart(0);
-            L.AddAtPosition(2, 2);
-            L.AddAtLast(6);
-            L.AddAtPosition(4, 4);
-            L.DeleteAtFirst();
-            L.DeleteAtPosition(2);
-            L.DeleteAtLast();
            
-            L.DisplayNode();
         }
     }
 }
