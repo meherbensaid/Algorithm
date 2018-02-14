@@ -97,41 +97,41 @@ namespace Algorithm
     public class program
     {
 
-        public static void Main()
-        {
-            Person firstName = new Person() { Name = "maher" };
-            Person firstName2 = new Person() { Name = "mehdi" };
-            Person firstName3 = new Person() { Name = "marwa" };
-            Person firstName4 = new Person() { Name = "hajer" };
-            Person firstName5 = new Person() { Name = "faouzi" };
+        //public static void Main()
+        //{
+        //    Person firstName = new Person() { Name = "maher" };
+        //    Person firstName2 = new Person() { Name = "mehdi" };
+        //    Person firstName3 = new Person() { Name = "marwa" };
+        //    Person firstName4 = new Person() { Name = "hajer" };
+        //    Person firstName5 = new Person() { Name = "faouzi" };
 
-            var hashCode1 = firstName.GetHashCode(firstName);
-            var hashCode2 = firstName2.GetHashCode(firstName2);
-            var hashCode3 = firstName3.GetHashCode(firstName3);
-            var hashCode4 = firstName4.GetHashCode(firstName4);
-            var hashCode5 = firstName5.GetHashCode(firstName5);
+        //    var hashCode1 = firstName.GetHashCode(firstName);
+        //    var hashCode2 = firstName2.GetHashCode(firstName2);
+        //    var hashCode3 = firstName3.GetHashCode(firstName3);
+        //    var hashCode4 = firstName4.GetHashCode(firstName4);
+        //    var hashCode5 = firstName5.GetHashCode(firstName5);
 
 
-            HashTable<Person> table = new HashTable<Person>();
-            Person person1 = new Person() { Name = "maher" };
-            Person person2 = new Person() { Name = "mehdi" };
-            Person person3 = new Person() { Name = "marwa" };
-            Person person4 = new Person() { Name = "hajer" };
-            Person person5 = new Person() { Name = "faouzi" };
+        //    HashTable<Person> table = new HashTable<Person>();
+        //    Person person1 = new Person() { Name = "maher" };
+        //    Person person2 = new Person() { Name = "mehdi" };
+        //    Person person3 = new Person() { Name = "marwa" };
+        //    Person person4 = new Person() { Name = "hajer" };
+        //    Person person5 = new Person() { Name = "faouzi" };
        
-            table.Insert(person1);
-            table.Insert(person2);
-            table.Insert(person3);
-            table.Insert(person4);
-            table.Insert(person5);
+        //    table.Insert(person1);
+        //    table.Insert(person2);
+        //    table.Insert(person3);
+        //    table.Insert(person4);
+        //    table.Insert(person5);
 
-            var Name=table.Retrieve(hashCode1);
-            var Name2 = table.Retrieve(hashCode2);
-            var Name3 = table.Retrieve(hashCode3);
-            var Name4 = table.Retrieve(hashCode4);
-            var Name5 = table.Retrieve(hashCode5);
+        //    var Name=table.Retrieve(hashCode1);
+        //    var Name2 = table.Retrieve(hashCode2);
+        //    var Name3 = table.Retrieve(hashCode3);
+        //    var Name4 = table.Retrieve(hashCode4);
+        //    var Name5 = table.Retrieve(hashCode5);
 
-            var removedNode = table.Remove(hashCode1);
-        }
+        //    var removedNode = table.Remove(hashCode1);
+        //}
     }
 }
