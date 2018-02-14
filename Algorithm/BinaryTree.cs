@@ -70,7 +70,6 @@ namespace Algorithm
 
             return node.value + "(" + DrawNodePrefix(node.left) + ", " + DrawNodePrefix(node.right) + ")";
         }
-
         public string DrawNodePostfix(TreeNode node)
         {
                 if (node == null)
@@ -111,7 +110,8 @@ namespace Algorithm
             {
                 return $"{node.right} (_,{DrawNodeInfix(node.right)})";
             }
-           
+
+            
 
             return "(" + DrawNodeInfix(node.left) + $",Parent: {node.value} ," + DrawNodeInfix(node.right) + ")" ;
         }
@@ -140,19 +140,23 @@ namespace Algorithm
         {
             return DrawNodeInfix(root);
         }
-        public static void Main()
-        {
-            //TreeNode root = new TreeNode(6);
-            //BinaryTree tree = new BinaryTree() { root = root };
-            //tree.Insert(4);
-            //tree.Insert(3);
-            //tree.Insert(5);
-            //tree.Insert(8);
-            //tree.Insert(7);
-            //tree.Insert(9);
-            //Console.WriteLine( tree.DrawTree());
+        //public static void Main()
+        //{
+        //    var nom = "aaa";
+        //    var hashCode = (int)nom.GetHashCode()%10;
 
-            //var leaf = tree.Find(8);
-        }
+        //    Console.WriteLine();
+        //    //TreeNode root = new TreeNode(6);
+        //    //BinaryTree tree = new BinaryTree() { root = root };
+        //    //tree.Insert(4);
+        //    //tree.Insert(3);
+        //    //tree.Insert(5);
+        //    //tree.Insert(8);
+        //    //tree.Insert(7);
+        //    //tree.Insert(9);
+        //    //Console.WriteLine( tree.DrawTree());
+
+        //    //var leaf = tree.Find(8);
+        //}
     }
 }
