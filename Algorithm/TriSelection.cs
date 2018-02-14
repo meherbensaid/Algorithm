@@ -34,8 +34,8 @@ namespace Algorithm
 
         public static void Main()
         {
-            var tab = new int[] {3, 2, 5, 6, 1, 0, 9};
-            TriSelection.DoTri((tab));
+            var tab = new int[] {3, 2, 1, 0};
+            TriInsertion.DoTri((tab));
         }
     }
 }
