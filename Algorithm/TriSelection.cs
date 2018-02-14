@@ -22,7 +22,6 @@ namespace Algorithm
                         min = j;
                     }
                 }
-
                 var tmp = Tab[i];
                 Tab[i] = Tab[min];
                 Tab[min] = tmp;
@@ -34,8 +33,8 @@ namespace Algorithm
 
         public static void Main()
         {
-            var tab = new int[] {3, 2, 1, 0};
-            TriABulles.DoTri((tab));
+            var tab = new int[] {1, 3,2,0, 9};
+            TriRapide.DoTri((tab));
         }
     }
 }

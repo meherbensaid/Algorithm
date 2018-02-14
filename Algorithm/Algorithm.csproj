@@ -53,6 +53,7 @@
     <Compile Include="TreeNode.cs" />
     <Compile Include="TriABulles.cs" />
     <Compile Include="TriInsertion.cs" />
+    <Compile Include="TriRapide.cs" />
     <Compile Include="TriSelection.cs" />
   </ItemGroup>
   <ItemGroup>
