@@ -18,9 +18,9 @@ namespace Algorithm
             }
         }
 
-        public static void Main()
-        {
-            var result=Fibonacci.DoFiconacci(20);
-        }
+        //public static void Main()
+        //{
+        //    var result=Fibonacci.DoFiconacci(20);
+        //}
     }
 }
