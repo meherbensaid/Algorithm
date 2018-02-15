@@ -30,31 +30,25 @@ namespace Algorithm
             return $"{value}";
         }
 
-        public void Display(int max)
-        {
-            for (int i = -1; i <= max; i++)
-            {
-                Console.WriteLine(Check(i));
-            }
-        }
+        //public void Display(int max)
+        //{
+        //    for (int i = -1; i <= max; i++)
+        //    {
+        //        Console.WriteLine(Check(i));
+        //    }
+        //}
 
         public void ThrowExceptionIfValueIsOutOfRung(int value)
         {
             if (value < 1)
             {
-                throw new ArgumentException("value should be greater than 1", nameof(value));
+                throw new ArgumentException("value should be greater than 1");
             }
 
             if (value > 100)
             {
-                throw new ArgumentException("value should be lower than 100", nameof(value));
+                throw new ArgumentException("value should be lower than 101");
             }
-        }
-
-        public static void Main()
-        {
-            FizzBuzz fb=new FizzBuzz();
-            fb.Display(100);
         }
     }
 }
