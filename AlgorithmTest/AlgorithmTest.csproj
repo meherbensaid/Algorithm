@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="FibonacciTest.cs" />
     <Compile Include="FizzBuzzTest.cs" />
+    <Compile Include="LinkedListTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TriABulles.cs" />
     <Compile Include="TriInsertionTest.cs" />
