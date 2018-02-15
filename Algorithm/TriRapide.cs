@@ -8,26 +8,26 @@ namespace Algorithm
 {
     public class TriRapide
     {
-        public static void DoTri(int[] tab)
+        public  void DoTri(int[] tab)
         {
             if (tab.Length > 0)
             {
-                triRapide1(tab, 0, tab.Length - 1);
+                triRapide(tab, 0, tab.Length - 1);
             }
             return;
         }
 
-        public static void triRapide1(int[] tab, int debut, int fin)
+        public  void triRapide(int[] tab, int debut, int fin)
         {
             if (debut < fin)
             {
                 int pivot = ChoosePivot(tab, debut, fin);
-                triRapide1(tab, debut, pivot - 1);
-                triRapide1(tab, pivot + 1, fin);
+                triRapide(tab, debut, pivot - 1);
+                triRapide(tab, pivot + 1, fin);
             }
         }
 
-        public static int ChoosePivot(int[] tab, int debut, int fin)
+        public  int ChoosePivot(int[] tab, int debut, int fin)
         {
             int compteur = debut;
             int pivot = tab[debut];

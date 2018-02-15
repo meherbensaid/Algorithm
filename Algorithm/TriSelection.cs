@@ -10,7 +10,7 @@ namespace Algorithm
     public class TriSelection
     {
 
-        public static int[] DoTri(int[] Tab)
+        public int[] DoTri(int[] Tab)
         {
             for (int i = 0; i < Tab.Length; i++)
             {
@@ -30,11 +30,6 @@ namespace Algorithm
             return Tab;
 
         }
-
-        //public static void Main()
-        //{
-        //    var tab = new int[] {1, 3,2,0, 9};
-        //    TriRapide.DoTri((tab));
-        //}
+        
     }
 }

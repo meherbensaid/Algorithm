@@ -8,7 +8,11 @@ namespace Algorithm
 {
     public class Fibonacci
     {
-        public static int DoFiconacci(int value)
+        public Fibonacci()
+        {
+                
+        }
+        public int DoFiconacci(int value)
         {
             if (value == 1) return 1;
             if (value == 0) return 0;
@@ -17,10 +21,6 @@ namespace Algorithm
                 return DoFiconacci(value - 1) + DoFiconacci(value - 2);
             }
         }
-
-        //public static void Main()
-        //{
-        //    var result=Fibonacci.DoFiconacci(20);
-        //}
+        
     }
 }

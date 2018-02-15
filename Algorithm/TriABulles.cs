@@ -8,7 +8,7 @@ namespace Algorithm
 {
    public class TriABulles
     {
-        public static int[] DoTri(int[] Tab )
+        public int[] DoTri(int[] Tab )
         {
             for (int i = Tab.Length-1; i>0; i--)
             {

@@ -9,7 +9,7 @@ namespace Algorithm
     /*Complexité au pire des cas O(n2)*/
     public class TriInsertion
     {
-        public static int[] DoTri(int[] Tab)
+        public int[] DoTri(int[] Tab)
         {
             for (int i = 1; i < Tab.Length; i++)
             {
