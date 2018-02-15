@@ -31,10 +31,10 @@ namespace Algorithm
 
         }
 
-        public static void Main()
-        {
-            var tab = new int[] {1, 3,2,0, 9};
-            TriRapide.DoTri((tab));
-        }
+        //public static void Main()
+        //{
+        //    var tab = new int[] {1, 3,2,0, 9};
+        //    TriRapide.DoTri((tab));
+        //}
     }
 }
