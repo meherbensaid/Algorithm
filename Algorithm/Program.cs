@@ -10,6 +10,22 @@ namespace Algorithm
     {
         public static void Main()
         {
+            var chaine = "a";
+            for (int i = 0; i < 50; i++)
+            {
+                var tmp = chaine + i;
+                for (int j = i; j < 50; j++)
+                {
+
+                    var tmp2 = chaine + j;
+
+                    if (tmp.GetHashCode() % 10 == tmp2.GetHashCode() % 10)
+                    {
+                        Console.WriteLine($"chaine 1  {tmp} , chaine 2 {tmp2}");
+                    }
+
+                }
+            }
 
         }
     }

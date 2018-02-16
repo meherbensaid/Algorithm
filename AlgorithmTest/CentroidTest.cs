@@ -22,8 +22,7 @@ namespace AlgorithmTest
             {
                 new Point() { X = 5, Y = 3 },
                 new Point() { X = 6, Y = 1 },
-                new Point() { X = 7, Y = 8 },
-               
+                new Point() { X = 7, Y = 8 },  
             };
         }
 

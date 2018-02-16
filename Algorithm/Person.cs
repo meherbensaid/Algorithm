@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Algorithm
 {
-    public class Person: IEqualityComparer<Person> {
+    public class Person: IEqualityComparer<Person>,IEquatable<Person> {
 
         public string Name { get; set; }
 
@@ -18,6 +18,11 @@ namespace Algorithm
         public int GetHashCode(Person obj)
         {
             return obj.Name.GetHashCode();
+        }
+
+        public bool Equals(Person other)
+        {
+            return other != null && this.Name.Equals(other.Name);
         }
     }
 }

@@ -55,6 +55,7 @@
     <Compile Include="CentroidTest.cs" />
     <Compile Include="FibonacciTest.cs" />
     <Compile Include="FizzBuzzTest.cs" />
+    <Compile Include="HashTableTest.cs" />
     <Compile Include="LinkedListTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TriABulles.cs" />

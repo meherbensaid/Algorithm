@@ -21,12 +21,12 @@ namespace Algorithm
             }
         }
 
-        public void Insert(T element)
+        public HashEntry<T> Insert(T element)
         {
             if (IsFull())
             {
                 Console.WriteLine("table is at full capacity!");
-                return;
+                return null;
             }
             int key = (element.GetHashCode(element));
             int positivekey = System.Math.Abs((element.GetHashCode(element)));
@@ -36,10 +36,12 @@ namespace Algorithm
             {
                 hash = (hash + 1) % MAX_SIZE;
             }
-            table[hash] = new HashEntry<T>(key, element);
+
+            var hashEntry = new HashEntry<T>(key, element);
+            return table[hash] = hashEntry;
         }
 
-        private bool IsFull()
+        public bool IsFull()
         {
             var isFull = true;
             for (int i = 0; i < MAX_SIZE; i++)
@@ -70,7 +72,7 @@ namespace Algorithm
             }
         }
 
-        public T Retrieve(int key)
+        public T Get(int key)
         {
             var hash = System.Math.Abs((key % MAX_SIZE));
             while (table[hash] != null && table[hash].Key != key)
@@ -79,18 +81,7 @@ namespace Algorithm
             }
             return table[hash] != null ? table[hash].Data : default(T);
         }
-        //public T Retrieve(int key)
-        //{
-        //    var hash = key % MAX_SIZE;
-        //    for (int i = 0; i < MAX_SIZE; i++)
-        //    {
-        //        if (table[i]!=null && key == table[i].Key)
-        //        {
-        //            return table[i].Data;
-        //        }
-        //    }
-        //    return default(T);
-        //}
+      
 
     }
 
