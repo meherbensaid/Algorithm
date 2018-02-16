@@ -10,27 +10,40 @@ namespace Algorithm
     {
         private object[] data;
         private int count;
-        private const int FIXED_SIZE = 20;
+        private const int FIXED_SIZE = 4;
 
         public ArrayList()
         {
             data = new object[FIXED_SIZE];
         }
 
+        public ArrayList(object[] elements)
+        {
+            data = new object[FIXED_SIZE];
+            for (int i = 0; i < elements.Length; i++)
+            {
+                data[i] = elements[i];
+            }
+
+            count = elements.Length;
+        }
+
+
         public object Get(int index)
         {
             if (index < count) return data[index];
-            throw new IndexOutOfRangeException();
+            throw new IndexOutOfRangeException("Index should be lower than size of the ArrayList");
           
         }
 
-        public void Add(Object o)
+        public object Add(Object o)
         {
             if(data.Length-count <= data.Length / 2)
             {
                 ResizeData();
             }
             data[count++] = o;
+            return data[count-1];
         }
         public object Delete(int index)
         {
@@ -40,7 +53,7 @@ namespace Algorithm
                 var tmp = index;
                 data[index] = null;
 
-                while (tmp < count)
+                while (tmp < count-1)
                 {
                     data[tmp] = data[tmp + 1];
                     data[tmp + 1] = null;
@@ -51,7 +64,7 @@ namespace Algorithm
             }
             else
             {
-                throw new IndexOutOfRangeException();
+                throw new IndexOutOfRangeException("Index should be lower than size of the ArrayList");
             }
         }
 
