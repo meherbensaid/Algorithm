@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayListTest.cs" />
+    <Compile Include="CentroidTest.cs" />
     <Compile Include="FibonacciTest.cs" />
     <Compile Include="FizzBuzzTest.cs" />
     <Compile Include="LinkedListTest.cs" />
