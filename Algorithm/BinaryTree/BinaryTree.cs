@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Algorithm
+namespace Algorithm.BinaryTree
 {
     public class BinaryTree
     {
@@ -47,6 +44,25 @@ namespace Algorithm
             {
                 return null;
             }
+        }
+
+        public List<int> DrawLargeur( TreeNode  node)
+        {
+            var tab=new List<int>();
+            Queue<TreeNode> stack=new Queue<TreeNode>();
+            string chaine = "";
+            stack.Enqueue(node);
+            while (stack.Count!=0)
+            {
+                var tmp = stack.Dequeue();
+                tab.Add(tmp.value);
+
+               if(tmp.right!=null) stack.Enqueue(tmp.right);
+                if (tmp.left != null) stack.Enqueue(tmp.left);
+            }
+
+            tab.Reverse();
+            return tab;
         }
 
         public string  DrawNodePrefix(TreeNode node)
@@ -140,23 +156,25 @@ namespace Algorithm
         {
             return DrawNodeInfix(root);
         }
-        //public static void Main()
-        //{
-        //    var nom = "aaa";
-        //    var hashCode = (int)nom.GetHashCode()%10;
+        public static void Main()
+        {
+            var nom = "aaa";
+            var hashCode = (int)nom.GetHashCode() % 10;
 
-        //    Console.WriteLine();
-        //    //TreeNode root = new TreeNode(6);
-        //    //BinaryTree tree = new BinaryTree() { root = root };
-        //    //tree.Insert(4);
-        //    //tree.Insert(3);
-        //    //tree.Insert(5);
-        //    //tree.Insert(8);
-        //    //tree.Insert(7);
-        //    //tree.Insert(9);
-        //    //Console.WriteLine( tree.DrawTree());
+            Console.WriteLine();
+            TreeNode root = new TreeNode(6);
+            BinaryTree tree = new BinaryTree() { root = root };
+            tree.Insert(4);
+            tree.Insert(3);
+            tree.Insert(5);
+            tree.Insert(8);
+            tree.Insert(7);
+            tree.Insert(9);
+            Stack<TreeNode> stack = new Stack<TreeNode>();
+            var a = tree.DrawLargeur(tree.root);
+            Console.WriteLine(tree.DrawTree());
 
-        //    //var leaf = tree.Find(8);
-        //}
+            //var leaf = tree.Find(8);
+        }
     }
 }

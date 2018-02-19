@@ -11,6 +11,7 @@
 
             for (int i = 0; i <= lastPointIndex; i++)
             {
+                //var k = (i + 1);
                 var k = (i + 1) % (lastPointIndex + 1);
                 var tmp = points[i].X * points[k].Y -
                             points[k].X * points[i].Y;
