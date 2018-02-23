@@ -21,6 +21,22 @@ namespace Algorithm
                 return DoFiconacci(value - 1) + DoFiconacci(value - 2);
             }
         }
+
+        public int DoFibonacciIterative(int value)
+        {
+            var Fib = new int [value+1];
+            Fib[0] = 0;
+            Fib[1] = 1;
+            for (int i = 2; i <= value; i++)
+            {
+
+                Fib[i] = Fib[i - 2] + Fib[i - 1];
+            }
+
+            return Fib[value];
+
+        }
+
         
     }
 }

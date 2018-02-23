@@ -52,5 +52,17 @@ namespace AlgorithmTest
             Assert.AreEqual(expected, actual);
         }
 
+        [Test]
+        public void Should_Return_Iterative_Fibonacci_Number()
+        {
+            var number = 20;
+            var expected = 6765;
+
+
+            var actual = _fibonacci.DoFibonacciIterative(number);
+
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 }
